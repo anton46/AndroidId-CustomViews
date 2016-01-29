@@ -11,6 +11,7 @@
         android:background="?android:selectableItemBackground"
         android:clickable="true"
         android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:textAppearanceMedium"
         android:text="Pie Chart" />
 
     <TextView
@@ -20,6 +21,7 @@
         android:background="?android:selectableItemBackground"
         android:clickable="true"
         android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:textAppearanceMedium"
         android:text="Chip View" />
 
     <TextView
@@ -29,6 +31,7 @@
         android:background="?android:selectableItemBackground"
         android:clickable="true"
         android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:textAppearanceMedium"
         android:text="Custom Viewpager" />
 
 </LinearLayout>
