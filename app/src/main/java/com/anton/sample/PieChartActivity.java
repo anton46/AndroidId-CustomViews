@@ -35,12 +35,12 @@ public class PieChartActivity extends Activity {
 
         setContentView(R.layout.activity_pie_chart);
         final PieChart pie = (PieChart) this.findViewById(R.id.Pie);
-        pie.addItem("Agamemnon", 2, res.getColor(R.color.seafoam));
-        pie.addItem("Bocephus", 3.5f, res.getColor(R.color.chartreuse));
-        pie.addItem("Calliope", 2.5f, res.getColor(R.color.emerald));
-        pie.addItem("Daedalus", 3, res.getColor(R.color.bluegrass));
-        pie.addItem("Euripides", 1, res.getColor(R.color.turquoise));
-        pie.addItem("Ganymede", 3, res.getColor(R.color.slate));
+        pie.addItem("Jakarta", 2, res.getColor(R.color.seafoam));
+        pie.addItem("Bandung", 3.5f, res.getColor(R.color.chartreuse));
+        pie.addItem("Jogjakarta", 2.5f, res.getColor(R.color.emerald));
+        pie.addItem("Semarang", 3, res.getColor(R.color.bluegrass));
+        pie.addItem("Bali", 1, res.getColor(R.color.turquoise));
+        pie.addItem("Lombok", 3, res.getColor(R.color.slate));
 
         (findViewById(R.id.Reset)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {

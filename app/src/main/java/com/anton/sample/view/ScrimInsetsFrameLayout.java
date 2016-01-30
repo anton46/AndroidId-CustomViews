@@ -27,11 +27,6 @@ import android.widget.FrameLayout;
 
 import com.anton.sample.R;
 
-/**
- * A layout that draws something in the insets passed to {@link #fitSystemWindows(Rect)},
- * i.e. the area above UI chrome
- * (status and navigation bars, overlay action bars).
- */
 public class ScrimInsetsFrameLayout extends FrameLayout {
 
     private Drawable mInsetForeground;
