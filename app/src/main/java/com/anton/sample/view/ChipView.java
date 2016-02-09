@@ -1,5 +1,6 @@
 package com.anton.sample.view;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
@@ -36,6 +37,32 @@ public class ChipView extends FrameLayout implements View.OnClickListener {
     public ChipView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
+
+        deleteButton.setLayerType(LAYER_TYPE_HARDWARE, null);
+        deleteButton.animate()
+                .alpha(0f)
+                .setListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        deleteButton.setLayerType(LAYER_TYPE_SOFTWARE, null);
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+
+                    }
+                })
+                .start();
     }
 
     public ChipView(Context context, AttributeSet attrs, int defStyleAttr) {

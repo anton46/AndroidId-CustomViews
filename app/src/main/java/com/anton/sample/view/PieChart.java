@@ -732,18 +732,6 @@ public class PieChart extends ViewGroup {
         // you can't scroll for a bit, pause, then scroll some more (the pause is interpreted
         // as a long press, apparently)
         mDetector.setIsLongpressEnabled(false);
-
-
-        // In edit mode it's nice to have some demo data, so add that here.
-        if (this.isInEditMode()) {
-            Resources res = getResources();
-            addItem("Annabelle", 3, res.getColor(R.color.bluegrass));
-            addItem("Brunhilde", 4, res.getColor(R.color.chartreuse));
-            addItem("Carolina", 2, res.getColor(R.color.emerald));
-            addItem("Dahlia", 3, res.getColor(R.color.seafoam));
-            addItem("Ekaterina", 1, res.getColor(R.color.slate));
-        }
-
     }
 
     private void tickScrollAnimation() {
